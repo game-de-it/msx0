@@ -9,7 +9,7 @@
 1. RG353VにArkOSを動作させています
 2. RG353VはWiFi接続とToolsからEnable Remote Serviceを実行してSSH接続を可能にしておきます
   - ArkOSのSSHアカウントは　ユーザ名「ark」、パスワード「ark」
-3. aptが利用できるディストリビューションなら、ArkOS以外のOSでもこの手順は参考になるかと思います
+3. aptが利用できるディストリビューションなら、ArkOS以外のLinuxでもこの手順は参考になるかと思います
 4. PHP,Pythonのプログラムは実装していません(時間があったら取り組みたい)
 
 ---
