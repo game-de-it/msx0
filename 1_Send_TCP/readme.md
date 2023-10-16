@@ -1,10 +1,16 @@
 # TCPパケットでデータを送信する
 
 ### はじめに
+   <img src="https://github.com/game-de-it/msx0/blob/main/asset/SC02.png" width="800">  
+   
+※構成図の画像をクリックして拡大  
+
+  
 1. RG353VにArkOSを動作させています
 2. RG353VはWiFi接続とToolsからEnable Remote Serviceを実行してSSH接続を可能にしておきます
-  - SSHアカウントは　ユーザ名：ark、パスワード：ark
+  - ArkOSのSSHアカウントは　ユーザ名「ark」、パスワード「ark」
 3. aptが利用できるディストリビューションなら、ArkOS以外のOSでもこの手順は参考になるかと思います
+4. PHP,Pythonのプログラムは実装していません(時間があったら取り組みたい)
 
 ---
 
@@ -196,5 +202,11 @@ $ while read LINE; do echo $LINE | xargs ./msx0DB_insert.sh ; done</tmp/namepipe
 90 _IOTPUT(PA$+ "connect",0)
 ```
 
+### 動作確認
+   <img src="https://github.com/game-de-it/msx0/blob/main/asset/SC01.jpg" width="800">  
+
+1. MSX0でrunする
+2. Linuxのポート番号9999にデータが送信されて、シェルスクリプトにデータが渡されてDBにデータが書き込まれる
+3. テーブル内データを確認する
 
 以上
